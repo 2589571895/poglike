@@ -135,7 +135,7 @@ if (process.env.PUSH_PLUS_USER) {
 
 async function sendNotify(text, desp, params = {}) {
   //提供6种通知
-  desp += `\n【通知】：\n目前仓库fork人数过多\n为防止账号再次遭到封禁失联\n有需要的可以加入TG群：https:/t.me/jd_zero205`;
+  desp += `\n【通知】：\n非商业用途，仅供交流学习\n参考网址：zhangjiayan.xyz;
   await Promise.all([
     serverNotify(text, desp),//微信server酱
     pushPlusNotify(text, desp)//pushplus(推送加)
